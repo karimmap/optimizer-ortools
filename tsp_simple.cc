@@ -940,7 +940,8 @@ void SetFirstSolutionStrategy(const TSPTWDataDT &data,
         FirstSolutionStrategy::LOCAL_CHEAPEST_INSERTION);
     break;
   case 3:
-    parameters.set_first_solution_strategy(FirstSolutionStrategy::SAVINGS);
+    parameters.set_first_solution_strategy(
+      FirstSolutionStrategy::SAVINGS);
     break;
   case 4:
     parameters.set_first_solution_strategy(
@@ -953,6 +954,46 @@ void SetFirstSolutionStrategy(const TSPTWDataDT &data,
   case 6:
     parameters.set_first_solution_strategy(
         FirstSolutionStrategy::CHRISTOFIDES);
+    break;
+  case 7:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::FIRST_UNBOUND_MIN_VALUE);
+    break;
+  case 8:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::LOCAL_CHEAPEST_ARC);
+    break;
+  case 9:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::SEQUENTIAL_CHEAPEST_INSERTION);
+    break;
+  case 10:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::BEST_INSERTION);
+    break;
+  case 11:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::ALL_UNPERFORMED);
+    break;
+  case 12:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::SWEEP);
+    break;
+  case 13:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::EVALUATOR_STRATEGY);
+    break;
+  case 14:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::PATH_MOST_CONSTRAINED_ARC);
+    break;
+  case 15:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::AUTOMATIC);
+    break;
+  case 16:
+    parameters.set_first_solution_strategy(
+        FirstSolutionStrategy::UNSET);
     break;
   default:
     if (has_overall_duration) {
